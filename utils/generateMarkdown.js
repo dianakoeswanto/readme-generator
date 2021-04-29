@@ -16,6 +16,7 @@ const renderLicenseLink = (license) => {
   );
 }
 
+// Renders the license section within readme if license is given
 const renderLicenseSection = (license) => {
   return (license
     ? `<a name="license"></a>\n## License\n${license}`
@@ -23,6 +24,7 @@ const renderLicenseSection = (license) => {
   );
 }
 
+// Renders description section within readme if given
 const renderDescriptionSection = (description) => {
   return (description
     ? `<a name="description"></a>\n## Description\n${description}`
@@ -30,6 +32,7 @@ const renderDescriptionSection = (description) => {
   );
 }
 
+// Renders installation section if given
 const renderInstallationSection = (installation) => {
   return (installation
     ? `<a name="installation"></a>\n## Installation Instructions\n${installation}`
@@ -37,6 +40,7 @@ const renderInstallationSection = (installation) => {
   );
 }
 
+// Renders usage section if given
 const renderUsageSection = (usage) => {
   return (usage
     ? `<a name="usage"></a>\n## Usage Instructions\n${usage}`
@@ -44,6 +48,7 @@ const renderUsageSection = (usage) => {
   );
 }
 
+// Renders contribution section if given
 const renderContributionSection = (contribution) => {
   return (contribution
     ? `<a name="contribution"></a>\n## Contribution Guidelines\n${contribution}`
@@ -51,6 +56,7 @@ const renderContributionSection = (contribution) => {
   );
 }
 
+// Renders tests section if given
 const renderTestsSection = (tests) => {
   return (tests
     ? `<a name="tests"></a>\n## Test Instructions\n${tests}`
@@ -58,6 +64,7 @@ const renderTestsSection = (tests) => {
   );
 }
 
+// Renders questions if given
 const renderQuestionSection = (github, email) => {
   const githubInfo = github ? `Find me on github: <https://github.com/${github}><br>` : "";
   const emailInfo = email ? `For any questions, please do not hesitate to contact me at ${email}` : "";
@@ -70,6 +77,7 @@ const renderQuestionSection = (github, email) => {
   );
 }
 
+// Renders table of contents
 const renderTableOfContents = (data) => {
   const toc = ['## Table of contents\n'];
 
@@ -86,6 +94,7 @@ const renderTableOfContents = (data) => {
   return tocStr;
 }
 
+// Renders title of readme
 const renderTitle = (title) => {
   return `# ${title}`;
 }
