@@ -2,6 +2,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Questions definition
 const questions = [{
         type: 'input',
         name: 'title',
