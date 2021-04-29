@@ -76,7 +76,7 @@ const promptUser = () => {
 //Initializer
 const init = async () => {
     const answers = await promptUser();
-    writeToFile("README.md", answers);
+    writeToFile("./output/README.md", answers);
 }
 
 // Function call to initialize app
