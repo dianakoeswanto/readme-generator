@@ -21,3 +21,5 @@ Firstly, run npm install. Once completed, run node index.js to run the applicati
 MIT
 
 <a name="video"></a>
+## Video 
+https://drive.google.com/file/d/1_UruMIwI5aDXoTkcJdPxjqIS7ebAsads/preview
