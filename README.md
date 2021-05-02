@@ -14,7 +14,7 @@ A command line application that generates a professional README file by promptin
 
 <a name="installation"></a>
 ## Installation
-Firstly, run npm install. Once completed, run node index.js to run the application.
+Firstly, run ```npm install``` followed by ```node index.js``` to run the application.
 
 <a name="license"></a>
 ## License
