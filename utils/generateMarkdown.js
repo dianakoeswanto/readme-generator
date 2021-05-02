@@ -35,7 +35,7 @@ const renderDescriptionSection = (description) => {
 // Renders installation section if given
 const renderInstallationSection = (installation) => {
   return (installation
-    ? `<a name="installation"></a>\n## Installation Instructions\n${installation}\n`
+    ? `<a name="installation"></a>\n## Installation\n${installation}\n`
     : ''
   );
 }
@@ -43,7 +43,7 @@ const renderInstallationSection = (installation) => {
 // Renders usage section if given
 const renderUsageSection = (usage) => {
   return (usage
-    ? `<a name="usage"></a>\n## Usage Instructions\n${usage}\n`
+    ? `<a name="usage"></a>\n## Usage\n${usage}\n`
     : ''
   );
 }
@@ -51,7 +51,7 @@ const renderUsageSection = (usage) => {
 // Renders contribution section if given
 const renderContributionSection = (contribution) => {
   return (contribution
-    ? `<a name="contribution"></a>\n## Contribution Guidelines\n${contribution}\n`
+    ? `<a name="contribution"></a>\n## Contribution\n${contribution}\n`
     : ''
   );
 }
@@ -59,7 +59,7 @@ const renderContributionSection = (contribution) => {
 // Renders tests section if given
 const renderTestsSection = (tests) => {
   return (tests
-    ? `<a name="tests"></a>\n## Test Instructions\n${tests}\n`
+    ? `<a name="tests"></a>\n## Tests\n${tests}\n`
     : ''
   );
 }
@@ -72,7 +72,7 @@ const renderQuestionSection = (github, email) => {
   const questionInfo = "".concat(githubInfo, emailInfo);
 
   return (questionInfo
-    ? `<a name="tests"></a>\n## Questions\n${questionInfo}\n`
+    ? `<a name="questions"></a>\n## Questions\n${questionInfo}\n`
     : ''
   );
 }
@@ -81,13 +81,13 @@ const renderQuestionSection = (github, email) => {
 const renderTableOfContents = (data) => {
   const toc = ['## Table of contents\n'];
 
-  if (data.description) { toc.push('[Description](#description)\n'); }
-  if (data.installation) { toc.push('[Installation](#installation)\n'); }
-  if (data.usage) { toc.push('[Usage](#usage)\n'); }
-  if (data.contribution) { toc.push('[Contribution Guidelines](#contribution)\n'); }
-  if (data.tests) { toc.push('[Tests](#test)\n'); }
-  if (data.license) { toc.push('[License](#license)\n'); }
-  if (data.github || data.email) { toc.push('[Questions](#questions)\n'); }
+  if (data.description) { toc.push('[Description](#description)<br>'); }
+  if (data.installation) { toc.push('[Installation](#installation)<br>'); }
+  if (data.usage) { toc.push('[Usage](#usage)<br>'); }
+  if (data.contribution) { toc.push('[Contribution](#contribution)<br>'); }
+  if (data.tests) { toc.push('[Tests](#tests)<br>'); }
+  if (data.license) { toc.push('[License](#license)<br>'); }
+  if (data.github || data.email) { toc.push('[Questions](#questions)<br>'); }
 
   let tocStr = "";
   toc.forEach((toc) => {tocStr = tocStr.concat(toc)});
